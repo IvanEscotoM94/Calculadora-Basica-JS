@@ -1,0 +1,102 @@
+
+.momo-trust-display-regular {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --c-fondo: #d8e2dc;
+    --c-blanco: #ffffff;
+    --c-rosa-claro: #ffcad4;
+    --c-rosa: #f4acb7;
+    --c-marron: #9d8189;
+
+    --c-texto: #2b2b2b;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--c-fondo);
+    color: var(--c-texto);
+    gap: 12px;
+}
+
+h1 {
+    margin: 0;
+    color: var(--c-marron);
+    font-size: 1.6rem;
+}
+
+.calc {
+    background: var(--c-blanco);
+    padding: 16px;
+    border: 2px solid var(--c-marron);
+    border-radius: 14px;
+    box-sizing: border-box;
+    width: min(340px, 92vw);
+}
+
+.display {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    text-align: right;
+    color: var(--c-texto);
+    background: var(--c-blanco);
+    border: 2px solid var(--c-rosa);
+    border-radius: 10px;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 2px solid var(--c-rosa);
+    background: var(--c-rosa-claro);
+    color: var(--c-texto);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn-op {
+    background: var(--c-rosa);
+    border-color: var(--c-marron);
+    color: var(--c-blanco);
+}
+
+.btn-igual {
+    background: var(--c-marron);
+    border-color: var(--c-marron);
+    color: var(--c-blanco);
+}
+
+.cero {
+    grid-column: span 2;
+}
+
+
+#calc {
+   
+}
+
+
+button:active {
+    transform: translateY(1px);
+}
