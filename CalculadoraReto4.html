@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora básica</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body class="momo-trust-display-regular">
+<h1>Calculadora básica</h1>
+
+<section id="calc" class="calc">
+    <input id="display" class="display" type="text" value="0" readonly />
+
+    <div class="teclado">
+
+        <button class="btn btn-op" data-op="C">C</button>
+        <button class="btn btn-op" data-op="/">/</button>
+        <button class="btn btn-op" data-op="*">*</button>
+        <button class="btn btn-op" data-op="-">-</button>
+
+
+        <button class="btn btn-num" data-num="7">7</button>
+        <button class="btn btn-num" data-num="8">8</button>
+        <button class="btn btn-num" data-num="9">9</button>
+        <button class="btn btn-op" data-op="+">+</button>
+
+
+        <button class="btn btn-num" data-num="4">4</button>
+        <button class="btn btn-num" data-num="5">5</button>
+        <button class="btn btn-num" data-num="6">6</button>
+        <button class="btn btn-igual" id="igual">=</button>
+
+
+        <button class="btn btn-num" data-num="1">1</button>
+        <button class="btn btn-num" data-num="2">2</button>
+        <button class="btn btn-num" data-num="3">3</button>
+        <button class="btn btn-num cero" data-num="0">0</button>
+    </div>
+</section>
+
+<script src="JS/logicaCalculadora.js"></script>
+</body>
+</html>
